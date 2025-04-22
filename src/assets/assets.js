@@ -226,6 +226,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "gd47g34h",
@@ -243,6 +244,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.5
   },
   {
     _id: "gd48g45h",
@@ -259,6 +261,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:3.5
   },
   {
     _id: "gd49g56h",
@@ -275,6 +278,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "gd50g67h",
@@ -291,6 +295,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.5
   },
 
   // Fruits
@@ -311,6 +316,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:5
   },
   {
     _id: "ek52j23k",
@@ -327,6 +333,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.5
   },
   {
     _id: "ek53j34k",
@@ -343,6 +350,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.3
   },
   {
     _id: "ek54j45k",
@@ -360,6 +368,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:5
   },
   {
     _id: "ek55j56k",
@@ -376,6 +385,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.5
   },
 
   // Dairy
@@ -395,6 +405,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:3.8
   },
   {
     _id: "ek57j78k",
@@ -411,6 +422,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.7
   },
   {
     _id: "ek58j89k",
@@ -427,6 +439,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "ek59j90k",
@@ -443,6 +456,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "ek60j01k",
@@ -459,6 +473,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.8
   },
 
   // Drinks
@@ -477,6 +492,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.9
   },
   {
     _id: "ek62j23k",
@@ -493,6 +509,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.5
   },
   {
     _id: "ek63j34k",
@@ -509,6 +526,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.9
   },
   {
     _id: "ek64j45k",
@@ -525,6 +543,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "ek65j56k",
@@ -541,6 +560,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.6
   },
 
   // Grains
@@ -559,6 +579,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.7
   },
   {
     _id: "ek67j78k",
@@ -575,6 +596,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.5
   },
   {
     _id: "ek68j89k",
@@ -591,6 +613,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.8
   },
   {
     _id: "ek69j90k",
@@ -607,6 +630,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.8
   },
   {
     _id: "ek70j01k",
@@ -623,6 +647,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.7
   },
 
   // Bakery
@@ -641,6 +666,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.9
   },
   {
     _id: "bk02b30y",
@@ -657,6 +683,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.8
   },
   {
     _id: "bk03c31x",
@@ -673,6 +700,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.7
   },
   {
     _id: "bk04d32w",
@@ -689,6 +717,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.6
   },
   {
     _id: "bk05e33v",
@@ -705,6 +734,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.5
   },
 
   // Instant
@@ -724,6 +754,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "in02g26t",
@@ -740,6 +771,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.6
   },
   {
     _id: "in03h27s",
@@ -756,6 +788,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.7
   },
   {
     _id: "in04i28r",
@@ -772,6 +805,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.6
   },
   {
     _id: "in05j29q",
@@ -788,6 +822,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4.7
   },
 ];
 
