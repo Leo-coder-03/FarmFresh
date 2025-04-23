@@ -4,6 +4,7 @@ import remove_icon from "./remove_icon.svg";
 import arrow_right_icon_colored from "./arrow_right_icon_colored.svg";
 import star_icon from "./star_icon.svg";
 import star_dull_icon from "./star_dull_icon.svg";
+import star_half_icon from "./star_half_icon.png";
 import cart_icon from "./cart_icon.svg";
 import nav_cart_icon from "./nav_cart_icon.svg";
 import add_icon from "./add_icon.svg";
@@ -79,6 +80,7 @@ export const assets = {
   arrow_right_icon_colored,
   star_icon,
   star_dull_icon,
+  star_half_icon,
   cart_icon,
   nav_cart_icon,
   add_icon,
