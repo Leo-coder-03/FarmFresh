@@ -8,3 +8,6 @@
   --color-primary-dull:#44ae7c;
   --color-button-hover:#7efcc5;
 }
+.no-scrollbar::-webkit-scrollbar{
+  display:none;
+}
