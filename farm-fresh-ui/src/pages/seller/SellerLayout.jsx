@@ -4,9 +4,10 @@ import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const SellerLayout = () => {
-    const {setIsSeller} = useAppContext();
+    const {axios,navigate,setIsSeller} = useAppContext();
 
     
     const sidebarLinks = [
@@ -16,7 +17,19 @@ const SellerLayout = () => {
     ];
 
     const logout = async()=>{
-        setIsSeller(false);
+        try{
+            const {data} = await axios.get('/api/seller/logout');
+            if(data.success){
+                toast.success(data.message)
+                setIsSeller(false);
+                navigate('/')
+            }else{
+                toast.error(data.message)
+            }
+
+        }catch(error){
+            toast.error(error.message)
+        }
     }
 
     return (
