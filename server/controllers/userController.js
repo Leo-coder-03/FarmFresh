@@ -35,14 +35,15 @@ export const login = async(req,res)=>{
         const {email,password} = req.body;
         if(!email || !password)
             return res.json({success:false,message:'Email and password are required'});
-        const user = await User.findOne({email});
+        const user = await User.findOne({ email: email.trim().toLowerCase() });
         if(!user)
         {
             return res.json({success:false,message:'Invalid email or password'});
         }
         const isMatch = await bcrypt.compare(password,user.password)
-        if(!isMatch)
-            return res.json({success:false,message:'Invalid email or password'});
+        if(!isMatch){
+            return res.json({success:false,message:'Invalid password'});
+    }
         const token = jwt.sign({id:user._id},process.env.JWT_SECRET,{expiresIn:'7d'});
         res.cookie('token',token,{
             httpOnly:true,//Prevent JS to access cookie
@@ -82,3 +83,4 @@ export const logout = async(req,res) =>{
         res.json({success:false,message:error.message});
     }
 }
+
