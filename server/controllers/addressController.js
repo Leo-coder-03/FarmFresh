@@ -14,9 +14,13 @@ res.json({success:false,message:error.message});
 
 //Get Address : /api/address/get
 export const getAddress = async(req,res)=>{
+    console.log("Logging error");
     try{
-        const {userId} = req.body
-        const addresses = await Address.find({userId})
+        const { userId } = req.query;
+        if (!userId) {
+            return res.status(400).json({ success: false, message: "userId is required" });
+        }
+        const addresses = await Address.find({ userId });
         res.json({success:true,addresses})
     }catch(error)
     {
