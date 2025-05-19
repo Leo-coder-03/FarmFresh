@@ -17,6 +17,7 @@ export const getAddress = async(req,res)=>{
     console.log("Logging error");
     try{
         const { userId } = req.query;
+        console.log(userId)
         if (!userId) {
             return res.status(400).json({ success: false, message: "userId is required" });
         }
