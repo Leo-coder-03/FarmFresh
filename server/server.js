@@ -1,16 +1,18 @@
 import cookieParser from 'cookie-parser';
 import express from 'express';
 import cors from 'cors';
-import connectDB from '../configs/db.js';
+import connectDB from './configs/db.js';
 import 'dotenv/config';
-import userRouter from '../routes/userRoute.js';
-import sellerRouter from '../routes/sellerRoute.js';
-import connectCloudinary from '../configs/cloudinary.js';
-import productRouter from '../routes/ProductRoute.js';
-import cartRouter from '../routes/cartRoute.js';
-import addressRouter from '../routes/addressRoute.js';
-import orderRouter from '../routes/orderRoute.js';
-import { stripeWebhooks } from '../controllers/orderController.js';
+import userRouter from './routes/userRoute.js';
+import sellerRouter from './routes/sellerRoute.js';
+import connectCloudinary from './configs/cloudinary.js';
+import productRouter from './routes/ProductRoute.js';
+import cartRouter from './routes/cartRoute.js';
+import addressRouter from './routes/addressRoute.js';
+import orderRouter from './routes/orderRoute.js';
+import { stripeWebhooks } from './controllers/orderController.js';
+import fs from 'fs';
+import path from 'path';
 
 const app = express();
 const port = process.env.PORT || 4000;
@@ -38,7 +40,10 @@ app.use('/cart',cartRouter)
 app.use('/address',addressRouter)
 app.use('/order',orderRouter)
 
-
+app.get('/list-files', (req, res) => {
+  const files = fs.readdirSync(path.resolve('.'));
+  res.json({ files });
+});
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
