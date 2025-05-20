@@ -4,6 +4,7 @@ import { dummyProducts } from "../assets/assets";
 import toast from "react-hot-toast";
 import { useEffect } from "react";
 import axios from "axios";
+import React from "react";
 
 axios.defaults.withCredentials = true;
 axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
