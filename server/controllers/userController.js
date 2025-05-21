@@ -51,6 +51,7 @@ export const login = async(req,res)=>{
             sameSite:process.env.NODE_ENV === 'production' ? 'none' : 'strict', //CSRF protection
             maxAge:7 * 24 * 60 * 60 * 1000, // cookie expiration time
  })
+ console.log(user.email)
  return res.json({success:true,user :{email: user.email,name:user.name}})
     }catch(error){
         res.json({success:false,message:error.message});
