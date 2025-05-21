@@ -49,6 +49,7 @@ const fetchUser = async ()=>{
             setCartItems(data.user.cartItems)
         }
     }catch(error){
+        console.log(error)
         setUser(null)
     }
 }

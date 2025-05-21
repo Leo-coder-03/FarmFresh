@@ -21,6 +21,10 @@ const Cart = () => {
         setCartArray(tempArray)
     }
     const getUserAddress = async () =>{
+        if (!user || !user._id) {
+        console.warn('User not available or _id missing');
+        return;
+    }
         const userId = user._id;
         console.log(userId);
         try{
