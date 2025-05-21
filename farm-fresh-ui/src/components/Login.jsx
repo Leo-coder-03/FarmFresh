@@ -19,8 +19,8 @@ const Login = () => {
             if(data.success)
             {
                 console.log("Logged in");
-                navigate('/')
                 setUser(data.user)
+                navigate('/')
                 console.log(user)
                 setShowUserLogin(false)
             }else{
