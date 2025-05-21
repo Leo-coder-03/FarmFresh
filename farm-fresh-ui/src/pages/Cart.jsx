@@ -24,7 +24,7 @@ const Cart = () => {
         const userId = user._id;
         console.log(userId);
         try{
-            const {data} = await axios.get('/api/address/get',{ params: { userId } });
+            const {data} = await axios.get('/api/address/get',{ params: { userId } , withCredentials: true});
             if(data.success){
                 setAddresses(data.addresses)
                 if(data.addresses.length>0)
