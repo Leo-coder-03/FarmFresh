@@ -21,6 +21,7 @@ const Login = () => {
                 console.log("Logged in");
                 navigate('/')
                 setUser(data.user)
+                console.log(user)
                 setShowUserLogin(false)
             }else{
                 console.log("Not logged in")
