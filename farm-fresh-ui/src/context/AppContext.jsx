@@ -49,6 +49,7 @@ const fetchUser = async ()=>{
             setCartItems(data.user.cartItems)
         }
     }catch(error){
+        console.log("Inside fetch user")
         console.log(error)
         setUser(null)
     }
@@ -133,7 +134,7 @@ useEffect(()=>{
         fetchUser()
         fetchSeller()
         fetchProducts()
-    },[])
+    },[user])
 
 // Update database cart items    
     useEffect(()=>{

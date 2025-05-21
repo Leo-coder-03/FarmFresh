@@ -18,10 +18,12 @@ const Login = () => {
         { withCredentials: true });
             if(data.success)
             {
+                console.log("Logged in");
                 navigate('/')
                 setUser(data.user)
                 setShowUserLogin(false)
             }else{
+                console.log("Not logged in")
                 toast.error(data.message)
             }
 
