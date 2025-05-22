@@ -52,7 +52,7 @@ const Navbar = () => {
             <button className="absolute -top-2 -right-3 text-xs text-white hover:bg-button-hover bg-primary w-[18px] h-[18px] rounded-full">{getCartCount()}</button>
         </div>
 
-        {!user ?( <button onClick = {()=>{setShowUserLogin(true);setUser(true);}} className="cursor-pointer px-8 py-2 bg-primary hover:bg-button-hover transition text-white rounded-full">
+        {!user ?( <button onClick = {()=>{setShowUserLogin(true)}} className="cursor-pointer px-8 py-2 bg-primary hover:bg-button-hover transition text-white rounded-full">
             Login
         </button>):(<div className="relative group">
             <img src={assets.profile_icon} className='w-10' alt=""/>
@@ -90,7 +90,6 @@ const Navbar = () => {
         <button onClick={()=>{
             setOpen(false);
             setShowUserLogin(true);
-            // setUser(true);
         }}className="cursor-pointer px-6 py-2 mt-2 bg-primary hover:bg-primary text-white transition text-white rounded-full text-sm">
             Login
         </button>):( <button onClick={logout} className="cursor-pointer px-6 py-2 mt-2 bg-primary text-white hover:bg-primary transition text-white rounded-full text-sm">

@@ -43,9 +43,11 @@ const fetchUser = async ()=>{
         const {data} = await axios.get('/api/user/is-auth', {
             withCredentials: true
         });
-        console.log(data);
+        console.log("Inside fetch",data);
         if(data.success){
+            console.log(data)
             setUser(data.user)
+            console.log(user)
             setCartItems(data.user.cartItems)
         }
     }catch(error){
@@ -134,7 +136,7 @@ useEffect(()=>{
         fetchUser()
         fetchSeller()
         fetchProducts()
-    },[user])
+    },[])
 
 // Update database cart items    
     useEffect(()=>{
@@ -155,7 +157,7 @@ useEffect(()=>{
             updateCart()
         }
     },[cartItems])
-    const value = {navigate,user,setUser,setIsSeller,isSeller,showUserLogin,setShowUserLogin,products,currency,addToCart,updateCartItem,removeFromCart,cartItems,searchQuery,setSearchQuery,getCartAmount,getCartCount,axios,fetchProducts,setCartItems}
+    const value = {navigate,user,setUser,setIsSeller,isSeller,showUserLogin,setShowUserLogin,products,currency,addToCart,updateCartItem,removeFromCart,cartItems,searchQuery,setSearchQuery,getCartAmount,getCartCount,axios,fetchProducts,setCartItems,fetchUser}
 return <AppContext.Provider value={value}>
     {children}
 </AppContext.Provider>
